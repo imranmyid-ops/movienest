@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+  --ring: #f87171;
+}
+*{ @apply box-border; }
+html, body { height: 100%; }
+body{
+  @apply bg-bg text-text;
+  background:
+    radial-gradient(1100px 500px at 70% -10%, #1c1c26 0%, rgba(12,12,18,0) 70%),
+    theme('colors.bg');
+}
+.container{ @apply max-w-6xl mx-auto px-6; }
+.badge{ @apply text-xs px-2.5 py-0.5 rounded-full border border-white/10 text-muted; }
+.chip{ @apply bg-soft text-muted px-3 py-2 rounded-full border border-white/10 cursor-pointer select-none; }
+.chip-active{ @apply text-white border-white/20; }
+.card{ @apply relative rounded-xl overflow-hidden bg-black/30 border border-white/10; }
+.btn{ @apply font-bold px-4 py-2 rounded-xl; }
+.btn-primary{ @apply bg-white text-black; }
+.btn-secondary{ @apply bg-transparent text-white border border-white/20; }
