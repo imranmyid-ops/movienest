@@ -3,7 +3,7 @@ import { useMemo, useState } from 'react'
 import Header from './(site)/components/Header'
 import Hero from './(site)/components/Hero'
 import MovieCard from './(site)/components/MovieCard'
-import movies from '@/data/movies.json'
+import movies from '../data/movies.json'
 
 type Movie = { id:number; title:string; year:number; genre:string; rating:number; img:string }
 
